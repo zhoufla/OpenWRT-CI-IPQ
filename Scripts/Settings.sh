@@ -42,6 +42,11 @@ if [ -n "$WRT_PACKAGE" ]; then
 	echo -e "$WRT_PACKAGE" >> ./.config
 fi
 
+# 调整内核参数 /etc/sysctl.conf
+mkdir -p files/etc
+echo "net.netfilter.nf_conntrack_udp_timeout=10" >> files/etc/sysctl.conf
+echo "net.netfilter.nf_conntrack_udp_timeout_stream=60" >> files/etc/sysctl.conf
+
 #高通平台调整
 DTS_PATH="./target/linux/qualcommax/files/arch/arm64/boot/dts/qcom/"
 if [[ "${WRT_TARGET^^}" == *"QUALCOMMAX"* ]]; then
