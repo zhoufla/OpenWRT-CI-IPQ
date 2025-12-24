@@ -35,5 +35,7 @@ Scripts——自定义脚本
 
 Config——自定义配置
 
-#
-[![Stargazers over time](https://starchart.cc/VIKINGYFY/OpenWRT-CI.svg?variant=adaptive)](https://starchart.cc/VIKINGYFY/OpenWRT-CI)
+## 型号
+jdcloud_re-ss-01 = 京东云亚瑟
+jdcloud_re-ss-01 = 京东云雅典娜
+jdcloud_re-cs-07 = 京东云太乙
