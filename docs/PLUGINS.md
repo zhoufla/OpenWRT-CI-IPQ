@@ -34,11 +34,16 @@
 |---|---|
 | `luci-app-homeproxy` | 基于 sing-box 的透明代理客户端，主科学上网入口（来自 VIKINGYFY/packages 修改版） |
 | `luci-app-passwall` | 老牌代理客户端；7 个可选子组件（haproxy、shadowsocks-rust、simple-obfs、trojan-plus、v2ray-geoview、v2ray-plugin 等）全部显式关闭，精简体积 |
-| `luci-app-natmapt` | 内网穿透/端口映射，解决无公网 IP 下的全锥形 NAT（muink 出品） |
+| `luci-app-natmapt` | 内网穿透/端口映射，解决无公网 IP 下的全锥形 NAT（源码取自 zhoufla 的 muink 分支） |
+| `natmapt-notify-script-telegram` | natmapt 端口更新后的 Telegram 电报提醒脚本，装到 `/etc/natmap/notify/Telegram`，在 LuCI「natmap → Notify Scripts」中选择使用 |
 | `luci-app-ddns-go` | 动态域名解析，支持阿里、腾讯、Cloudflare 等服务商（sirpdboy 封装 ddns-go） |
 | `luci-app-upnp` | UPnP IGD 自动端口映射，方便 BT 下载、游戏联机 |
 | `luci-app-zerotier` | ZeroTier 虚拟局域网（异地组网） |
 | `luci-proto-wireguard` | WireGuard 协议在 LuCI 网络配置中的支持（配合 `kmod-wireguard`） |
+
+> Telegram 提醒用法：LuCI「网络 → natmap → Notify Scripts」中勾选 EnNotify、选择 `Telegram`，
+> 在 Tokens 里填 `TOKEN=<机器人token>` 与 `CHAT_ID=<会话ID>` 两条，Text content 填自定义文本
+> （可用 natmap 变量，如 `${addr}:${port}`），Private API Domain 留空即用官方 `api.telegram.org`。
 
 ### 存储与共享
 

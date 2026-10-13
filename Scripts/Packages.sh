@@ -82,9 +82,9 @@ UPDATE_PACKAGE "netwizard" "sirpdboy/luci-app-netwizard" "main"
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
 UPDATE_PACKAGE "timecontrol" "sirpdboy/luci-app-timecontrol" "main"
 
-UPDATE_PACKAGE "natmapt" "muink/openwrt-natmapt" "master"
+UPDATE_PACKAGE "natmapt" "zhoufla/openwrt-natmapt" "master"
 UPDATE_PACKAGE "stuntman" "muink/openwrt-stuntman" "master"
-UPDATE_PACKAGE "luci-app-natmapt" "muink/luci-app-natmapt" "master"
+UPDATE_PACKAGE "luci-app-natmapt" "zhoufla/luci-app-natmapt" "master"
 
 UPDATE_PACKAGE "airpi3000m-fancontrol" "LianXia233/luci-app-airpi3000m-fancontrol" "main"
 UPDATE_PACKAGE "chfs" "LianXia233/luci-app-chfs" "main"
